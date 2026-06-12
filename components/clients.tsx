@@ -1,15 +1,5 @@
 import { SectionHeading } from "./section-heading";
-
-const clients = [
-  "Emory Point",
-  "Gables",
-  "Saks Fifth Avenue",
-  "AMLI Residential",
-  "The Battery",
-  "Ricoh",
-  "CMA",
-  "Norcross High",
-];
+import { clients } from "@/lib/site-data";
 
 export function Clients() {
   return (
@@ -22,7 +12,7 @@ export function Clients() {
           centered
         />
         <div className="client-grid">
-          {clients.map((client) => (
+          {clients.slice(0, 12).map((client) => (
             <div className="client-name" key={client}>
               {client}
             </div>
