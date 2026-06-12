@@ -4,34 +4,60 @@ import { SectionHeading } from "./section-heading";
 
 const projects = [
   {
-    src: "/gallery/monument.svg",
+    src: "/Monument Signs/57.jpg",
     title: "Monument Signage",
     category: "Exterior",
     className: "gallery-tall",
+    position: "center",
   },
   {
-    src: "/gallery/window-graphics.svg",
+    src: "/Window & Wall Graphics/30 (3).JPG",
     title: "Window Graphics",
-    category: "Brand Environments",
+    category: "Glass Graphics",
     className: "",
+    position: "center",
   },
   {
-    src: "/gallery/wayfinding.svg",
-    title: "Wayfinding System",
+    src: "/ADA/27.jpg",
+    title: "ADA Signage",
     category: "Interior",
     className: "",
+    position: "center",
   },
   {
-    src: "/gallery/vehicle.svg",
-    title: "Fleet Graphics",
-    category: "Vehicle",
+    src: "/Banners & Flags/21.jpg",
+    title: "Street Banners",
+    category: "Banners & Flags",
     className: "gallery-wide",
+    position: "center",
   },
   {
-    src: "/gallery/channel-letters.svg",
-    title: "Channel Letters",
-    category: "Illuminated",
+    src: "/Dimesional Signs and Lettering/28.jpg",
+    title: "Dimensional Lettering",
+    category: "Custom Fabrication",
     className: "",
+    position: "center",
+  },
+  {
+    src: "/Sandblast & Routed Signs/37.jpg",
+    title: "Routed Signs",
+    category: "Sandblast & Routed",
+    className: "",
+    position: "center",
+  },
+  {
+    src: "/Roadside Signs/20.jpg",
+    title: "Leasing & Roadside Signs",
+    category: "Property Signage",
+    className: "",
+    position: "center",
+  },
+  {
+    src: "/Aluminum Signs/31 (2).JPG",
+    title: "Aluminum Signs",
+    category: "Regulatory & Property",
+    className: "gallery-wide",
+    position: "center",
   },
 ];
 
@@ -43,7 +69,7 @@ export function Gallery() {
           <SectionHeading
             eyebrow="Selected work"
             title="Built for real spaces and lasting visibility."
-            description="A sample of the signage and graphics we can create. Project photography can be added here as the new site is prepared for launch."
+            description="A quick look at real SignWise projects across exterior signs, interior signage, banners, routed signs, and glass graphics."
           />
           <a href="#quote" className="text-link">
             Plan your sign
@@ -56,9 +82,10 @@ export function Gallery() {
             <article className={`project-card ${project.className}`} key={project.title}>
               <Image
                 src={project.src}
-                alt={`${project.title} project placeholder`}
+                alt={`${project.title} project example`}
                 fill
                 sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                style={{ objectPosition: project.position }}
               />
               <div className="project-overlay">
                 <span>{project.category}</span>

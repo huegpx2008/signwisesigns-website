@@ -208,43 +208,29 @@ img {
 .hero {
   display: grid;
   position: relative;
-  min-height: min(850px, calc(100vh - 84px));
-  padding: 84px 24px 92px;
+  min-height: clamp(560px, calc(100vh - 84px), 740px);
+  padding: 84px 24px;
   overflow: hidden;
   place-items: center;
-  background: #fbfcfc;
+  background: #eef3ef;
 }
 
-.hero-pattern {
+.hero-video {
   position: absolute;
   inset: 0;
-  opacity: 0.28;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
-    repeating-linear-gradient(105deg, transparent 0 34px, rgba(20, 153, 173, 0.04) 35px 36px),
-    repeating-linear-gradient(15deg, transparent 0 54px, rgba(120, 166, 62, 0.045) 55px 56px);
-  mask-image: radial-gradient(ellipse at center, black, transparent 78%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.36;
+  filter: saturate(0.42) contrast(0.82) brightness(1.18);
 }
 
-.hero-glow {
+.hero-video-wash {
   position: absolute;
-  width: 480px;
-  height: 480px;
-  border-radius: 999px;
-  filter: blur(1px);
-  opacity: 0.14;
-}
-
-.hero-glow-left {
-  top: -200px;
-  left: -180px;
-  background: radial-gradient(circle, var(--teal), transparent 68%);
-}
-
-.hero-glow-right {
-  right: -210px;
-  bottom: -220px;
-  background: radial-gradient(circle, var(--green), transparent 68%);
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.72)),
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.7) 74%);
 }
 
 .hero-content {
@@ -257,33 +243,9 @@ img {
   text-align: center;
 }
 
-.hero-kicker {
-  margin: 0 0 34px;
-  color: var(--teal-dark);
-  font-family: var(--font-heading), sans-serif;
-  font-size: 0.73rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-}
-
 .hero-logo {
-  width: min(760px, 88vw);
+  width: min(760px, 72vw);
   height: auto;
-}
-
-.hero-copy {
-  max-width: 650px;
-  margin: 38px auto 0;
-  color: #526064;
-  font-size: clamp(1rem, 2vw, 1.18rem);
-  line-height: 1.75;
-}
-
-.hero-actions {
-  display: flex;
-  margin-top: 36px;
-  gap: 12px;
 }
 
 .button {
@@ -326,26 +288,6 @@ img {
 .button-secondary:hover {
   border-color: var(--teal);
   color: var(--teal-dark);
-}
-
-.hero-note {
-  position: absolute;
-  z-index: 2;
-  bottom: 28px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  color: #728083;
-  font-size: 0.72rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-
-.hero-note-dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--green);
 }
 
 .about-grid {
@@ -512,36 +454,58 @@ img {
 
 .clients-section {
   padding-block: 100px;
+  background:
+    linear-gradient(180deg, rgba(4, 62, 72, 0.3), rgba(255, 255, 255, 0.34) 46%, rgba(3, 53, 63, 0.34)),
+    url("/background.jpg") center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+.clients-section .section-heading h2 {
+  color: white;
+  text-shadow: 0 2px 18px rgba(3, 45, 52, 0.36);
+}
+
+.clients-section .section-copy {
+  color: rgba(255, 255, 255, 0.86);
+  text-shadow: 0 1px 12px rgba(3, 45, 52, 0.34);
+}
+
+.clients-section .eyebrow {
+  color: white;
 }
 
 .client-grid {
   display: grid;
   margin-top: 58px;
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.48);
+  border-left: 1px solid rgba(255, 255, 255, 0.48);
   grid-template-columns: repeat(4, 1fr);
+  box-shadow: 0 28px 80px rgba(5, 48, 56, 0.24);
 }
 
 .client-name {
   display: grid;
   min-height: 120px;
   padding: 20px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  color: #738083;
+  border-right: 1px solid rgba(255, 255, 255, 0.48);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.22);
+  color: white;
   font-family: var(--font-heading), sans-serif;
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  text-shadow: 0 1px 10px rgba(3, 45, 52, 0.32);
   place-items: center;
   text-align: center;
   text-transform: uppercase;
+  backdrop-filter: blur(7px);
   transition: 180ms ease;
 }
 
 .client-name:hover {
-  background: var(--mist);
-  color: var(--teal-dark);
+  background: rgba(255, 255, 255, 0.42);
+  color: white;
 }
 
 .gallery-section {
@@ -876,31 +840,12 @@ img {
   }
 
   .hero {
-    min-height: calc(100svh - 72px);
-    padding: 60px 24px 50px;
-  }
-
-  .hero-kicker {
-    margin-bottom: 25px;
-    font-size: 0.64rem;
-    letter-spacing: 0.18em;
+    min-height: min(620px, calc(100svh - 72px));
+    padding: 58px 20px;
   }
 
   .hero-logo {
     width: min(92vw, 570px);
-  }
-
-  .hero-copy {
-    margin-top: 27px;
-  }
-
-  .hero-actions {
-    width: min(100%, 360px);
-    flex-direction: column;
-  }
-
-  .hero-note {
-    display: none;
   }
 
   .section-heading h2 {

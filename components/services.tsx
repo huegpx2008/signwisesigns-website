@@ -4,33 +4,33 @@ import { SectionHeading } from "./section-heading";
 const services = [
   {
     number: "01",
-    title: "Exterior Signs",
-    text: "Monument signs, channel letters, dimensional lettering, architectural signs, and storefront signage.",
+    title: "Exterior & Storefront Signs",
+    text: "Monument signs, retail and storefront signage, architectural signs, channel letters, and replacement sign faces.",
   },
   {
     number: "02",
-    title: "Interior & ADA",
-    text: "Wayfinding, ADA-compliant signs, plaques, directories, wall graphics, and branded interior environments.",
+    title: "Interior, ADA & Wayfinding",
+    text: "ADA and regulatory signs, multifamily wayfinding, plaques, directories, wall graphics, and branded interior signage.",
   },
   {
     number: "03",
-    title: "Vehicle Graphics",
-    text: "Professional fleet graphics, wraps, decals, and lettering that carry your brand wherever the road leads.",
+    title: "Dimensional & Lighted Signs",
+    text: "Dimensional and 3-D signs, lighted signs, sandblasted signs, routed signs, and custom fabrication.",
   },
   {
     number: "04",
-    title: "Banners & Displays",
-    text: "Banners, flags, tradeshow exhibits, construction signs, site signs, and temporary promotional displays.",
+    title: "Vehicle Graphics",
+    text: "Professional vehicle graphics, fleet lettering, decals, labels, and brand details that travel with your business.",
   },
   {
     number: "05",
-    title: "Specialty Fabrication",
-    text: "Sandblasted and routed signs, custom regulatory signage, decals, labels, and one-of-a-kind solutions.",
+    title: "Banners & Displays",
+    text: "Banners, flags, tradeshow exhibits, displays, construction signs, site signs, and temporary promotional signage.",
   },
   {
     number: "06",
-    title: "Installation",
-    text: "Careful, professional installation and refurbishment that helps your signage look right and last longer.",
+    title: "Sign Packages & Installation",
+    text: "Apartment home sign packages, rebranding, refurbishing existing signs, and professional installation.",
   },
 ];
 

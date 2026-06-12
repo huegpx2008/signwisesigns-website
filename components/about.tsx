@@ -5,7 +5,7 @@ import { SectionHeading } from "./section-heading";
 const qualities = [
   "Design through installation",
   "Interior and exterior signage",
-  "Solutions for projects of every size",
+  "Rebranding, refurbishing, and replacement faces",
 ];
 
 export function About() {
@@ -19,9 +19,10 @@ export function About() {
           />
           <p>
             SignWise is a full-service custom sign company providing thoughtful,
-            practical solutions from concept to installation. Whether you need a
-            complete sign package, a monument sign, fleet graphics, or one
-            temporary sign, we shape the project around your needs and budget.
+            practical solutions from conception to installation. Whether you
+            need a complete sign package, rebranding, a monument sign,
+            refurbishing, a replacement sign face, or one temporary sign, we
+            shape the project around your needs and budget.
           </p>
           <p>
             Our team brings more than 30 years of sign-industry experience to

@@ -63,11 +63,12 @@ export function Quote() {
           <label>
             Project type
             <select name="project">
-              <option>Exterior signage</option>
-              <option>Interior or ADA signage</option>
-              <option>Vehicle graphics</option>
-              <option>Banners or displays</option>
-              <option>Installation</option>
+              <option>Exterior, storefront, or monument signage</option>
+              <option>Interior, ADA, or wayfinding signage</option>
+              <option>Dimensional, lighted, routed, or sandblasted signs</option>
+              <option>Vehicle graphics, decals, or labels</option>
+              <option>Banners, flags, tradeshow displays, or site signs</option>
+              <option>Sign package, rebranding, refurbishing, or installation</option>
               <option>Something else</option>
             </select>
           </label>
