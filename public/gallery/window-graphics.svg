@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#27464e"/>
+      <stop offset="1" stop-color="#87a9ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="#ddd9ce"/>
+  <rect x="50" y="52" width="900" height="596" fill="url(#glass)"/>
+  <path d="M350 52v596M650 52v596" stroke="#d8d5cc" stroke-width="22"/>
+  <path d="M58 500 330 230v410H58ZM665 52h280v260L770 487 665 390Z" fill="#128fa3" opacity=".83"/>
+  <circle cx="500" cy="350" r="118" fill="#f5f6f1" opacity=".94"/>
+  <text x="500" y="340" fill="#142c31" font-family="Arial,sans-serif" font-size="47" font-weight="700" text-anchor="middle">MAKE</text>
+  <text x="500" y="398" fill="#78a63e" font-family="Arial,sans-serif" font-size="47" font-weight="700" text-anchor="middle">AN IMPACT</text>
+</svg>

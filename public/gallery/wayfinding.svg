@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f3f1e9"/>
+      <stop offset="1" stop-color="#babdb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#wall)"/>
+  <path d="M0 555h1000v145H0z" fill="#8b8f88"/>
+  <path d="M0 555h1000" stroke="#636a68" stroke-width="6"/>
+  <rect x="280" y="105" width="440" height="470" rx="8" fill="#163940"/>
+  <text x="355" y="205" fill="#75a93f" font-family="Arial,sans-serif" font-size="35" font-weight="700">DIRECTORY</text>
+  <path d="M350 250h300M350 330h300M350 410h300M350 490h300" stroke="#668188" stroke-width="3"/>
+  <text x="350" y="300" fill="#fff" font-family="Arial,sans-serif" font-size="25">LEASING OFFICE</text>
+  <text x="350" y="380" fill="#fff" font-family="Arial,sans-serif" font-size="25">FITNESS CENTER</text>
+  <text x="350" y="460" fill="#fff" font-family="Arial,sans-serif" font-size="25">RESIDENT LOUNGE</text>
+  <path d="m620 286 24 14-24 14M620 366l24 14-24 14M620 446l24 14-24 14" fill="none" stroke="#71bec7" stroke-width="5"/>
+</svg>

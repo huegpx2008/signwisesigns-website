@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c4d7d8"/>
+      <stop offset=".7" stop-color="#e8ece7"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="760" cy="170" r="80" fill="#f4e5ba"/>
+  <path d="M0 700c180-90 340-80 470 0 170 105 290 15 430-40v540H0Z" fill="#8ca76a"/>
+  <path d="M0 805c210-80 480 20 900-60v455H0Z" fill="#547955"/>
+  <rect x="170" y="280" width="560" height="610" rx="16" fill="#e9e5dc"/>
+  <rect x="205" y="330" width="490" height="420" fill="#183b43"/>
+  <path d="M290 465h320" stroke="#70b8c1" stroke-width="8"/>
+  <text x="450" y="550" fill="#fff" font-family="Arial,sans-serif" font-size="66" font-weight="700" text-anchor="middle">CEDAR</text>
+  <text x="450" y="620" fill="#91bd55" font-family="Arial,sans-serif" font-size="43" text-anchor="middle">COMMONS</text>
+  <text x="450" y="690" fill="#c7d7d8" font-family="Arial,sans-serif" font-size="24" letter-spacing="8" text-anchor="middle">WELCOME HOME</text>
+  <rect x="130" y="890" width="640" height="62" fill="#b9b2a6"/>
+</svg>
