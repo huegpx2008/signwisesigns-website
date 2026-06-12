@@ -1,15 +1,16 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Close, Menu } from "./icons";
 
 const links = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Our Clients", href: "#clients" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Our Clients", href: "/clients" },
+  { label: "Gallery", href: "/gallery" },
 ];
 
 export function Header() {
@@ -18,7 +19,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <a href="#home" className="header-logo" aria-label="SignWise Signs home">
+        <Link href="/" className="header-logo" aria-label="SignWise Signs home">
           <Image
             src="/signwise-logo.avif"
             alt="SignWise Signs"
@@ -26,17 +27,17 @@ export function Header() {
             height={100}
             priority
           />
-        </a>
+        </Link>
 
         <nav className="desktop-nav" aria-label="Main navigation">
           {links.map((link) => (
-            <a key={link.href} href={link.href}>
+            <Link key={link.href} href={link.href}>
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a href="#quote" className="nav-cta">
+          <Link href="/quote" className="nav-cta">
             Request a quote
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -53,13 +54,13 @@ export function Header() {
       {open ? (
         <nav className="mobile-nav" aria-label="Mobile navigation">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a href="#quote" className="nav-cta" onClick={() => setOpen(false)}>
+          <Link href="/quote" className="nav-cta" onClick={() => setOpen(false)}>
             Request a quote
-          </a>
+          </Link>
         </nav>
       ) : null}
     </header>
